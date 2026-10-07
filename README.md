@@ -2,9 +2,8 @@
 * I started learning CSS.
 * I looked for ways to divide my website into different pages.
 * I understood some things but got confused, so I asked for help to understand them better.
-* I divided each page into a separate file. I kept the same <head> and <header>, but changed the file name and the content.
-* Each file has its own section, while I kept the <head>, <header>, and <footer>.
-* I went to the header and removed the class="lien-actif" from the Home page, then added it to the About page in the second file and to the Programs page in the third file. This makes the selection animation change depending on the page.
+* I divided each page into a separate file. I kept the same head and header, but changed the file name and the content.
+* Each file has its own section, while I kept the head, header, and footer.
 * I created a new file called contact.html and a CSS file for the Contact page.
 * I created another page with the help of code from an existing website.
 * I searched for the CSS properties I needed to use for the design.
