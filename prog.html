@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Élan Fitness, nos programmes : musculation, yoga, cardio et boxe fitness à Casablanca.">
+  <meta name="description" content="Élan Fitness, salle de sport à Casablanca : musculation, yoga, cardio et boxe fitness avec des coachs diplômés. Réservez votre cours d'essai gratuit.">
   <title>Élan Fitness | Programmes</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,26 +11,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="img/pngegg.png" type="image/x-icon">
 </head>
 
 <body>
 
   <header class="en-tete">
     <div class="conteneur en-tete-contenu">
-      <a href="index.html" class="logo">Élan Fitness</a>
+      <a href="index.html" class="logo">
+        <img src="img/pngegg.png" alt="Logo Élan Fitness">
+        Élan Fitness
+      </a>
 
       <nav aria-label="Navigation principale">
         <ul class="menu">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="about.html">À propos</a></li>
-          <li><a href="prog.html" class="lien-actif">Programmes</a></li>
+          <li><a href="prog.html"class="lien-actif">Programmes</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li>
+        </ul>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="section">
+        <section id="programmes" class="section">
       <div class="conteneur">
 
         <div class="section-titre">
@@ -41,7 +47,7 @@
         <div class="cartes">
 
           <article class="carte carte-programme">
-            <img src="img/musculation.jpg" alt="Musculation">
+            <img src="img/musculation.jpg" alt="Une sportive soulève des haltères dans l'espace musculation">
             <div class="programme-corps">
               <span class="etiquette etiquette-orange">Tous niveaux</span>
               <h3>Musculation</h3>
@@ -51,7 +57,7 @@
           </article>
 
           <article class="carte carte-programme">
-            <img src="img/yoga.jpg" alt="Yoga">
+            <img src="img/yoga.jpg" alt="Un groupe pratique le yoga sur des tapis dans une salle lumineuse">
             <div class="programme-corps">
               <span class="etiquette etiquette-bleue">Débutant</span>
               <h3>Yoga</h3>
@@ -61,7 +67,7 @@
           </article>
 
           <article class="carte carte-programme">
-            <img src="img/cardio.jpg" alt="Cardio training">
+            <img src="img/cardio.jpg" alt="Des sportifs suivent un circuit de cardio training avec des kettlebells">
             <div class="programme-corps">
               <span class="etiquette etiquette-verte">Intermédiaire</span>
               <h3>Cardio training</h3>
@@ -70,14 +76,72 @@
             </div>
           </article>
 
+          <article class="carte carte-programme">
+            <img src="img/boxe.jpg" alt="Une sportive frappe un sac de frappe pendant un cours de boxe fitness">
+            <div class="programme-corps">
+              <span class="etiquette etiquette-verte">Intermédiaire</span>
+              <h3>Boxe fitness</h3>
+              <p>Cardio et coordination, sans contact.</p>
+              <p class="duree"><img src="img/icone-duree.svg" alt="">50 min</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="formules">
+
+          <div class="section-titre">
+            <h3>Nos formules</h3>
+            <p>Des abonnements flexibles adaptés à vos envies et objectifs</p>
+          </div>
+
+          <div class="cartes">
+
+            <article class="carte formule">
+              <h4>Essentiel</h4>
+              <p class="prix">250 MAD <span>/ mois</span></p>
+              <ul class="formule-liste">
+                <li>Accès à la salle</li>
+                <li>2 cours collectifs par semaine</li>
+                <li>Sans engagement</li>
+              </ul>
+              <a href="contact.html" class="bouton bouton-secondaire">Choisir</a>
+            </article>
+
+            <article class="carte formule formule-populaire">
+              <p class="badge-populaire">Populaire</p>
+              <h4>Premium</h4>
+              <p class="prix">400 MAD <span>/ mois</span></p>
+              <ul class="formule-liste">
+                <li>Accès à la salle</li>
+                <li>Cours collectifs illimités</li>
+                <li>1 bilan avec un coach</li>
+              </ul>
+              <a href="contact.html" class="bouton bouton-principal">Choisir</a>
+            </article>
+
+            <article class="carte formule">
+              <h4>Duo</h4>
+              <p class="prix">650 MAD <span>/ mois</span></p>
+              <p class="prix-note">pour 2 personnes</p>
+              <ul class="formule-liste">
+                <li>Accès à la salle pour deux</li>
+                <li>Cours collectifs illimités</li>
+                <li>Sans engagement</li>
+              </ul>
+              <a href="contact.html" class="bouton bouton-secondaire">Choisir</a>
+            </article>
+
+          </div>
         </div>
 
       </div>
     </section>
-  </main>
 
-  <footer class="pied-de-page">
+  </main>
+    <footer class="pied-de-page">
     <div class="conteneur">
+
       <div class="pied-haut">
         <div>
           <p class="logo logo-clair">Élan Fitness</p>
@@ -89,6 +153,7 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">À propos</a></li>
             <li><a href="prog.html">Programmes</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
           </ul>
         </nav>
       </div>
@@ -97,7 +162,12 @@
         <p>Adresse : 12 rue des Palmiers, 20000 Casablanca</p>
         <p>&copy; 2026 Élan Fitness — Projet pédagogique fictif</p>
       </div>
+
     </div>
+              <div class="mapss">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500.39354926201736!2d-9.257252489044832!3d32.237285098544554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYoucode%20Safi!5e1!3m2!1sen!2sma!4v1791459671138!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+      </div>
   </footer>
 
 </body>

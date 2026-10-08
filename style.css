@@ -85,6 +85,8 @@ button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
+  border: #000000;
+  border-radius: 23PX;
 }
 
 .bouton {
@@ -177,7 +179,7 @@ button:focus-visible {
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #0F1B2D;
+  color: #000000;
 }
 
 .logo::after {
@@ -198,6 +200,7 @@ button:focus-visible {
   font-weight: 500;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .menu a:hover {
@@ -544,4 +547,71 @@ button:focus-visible {
   margin-top: 24px;
   font-size: 13px;
   color: #94A3B8;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 30px;
+    height: 50px;
+    object-fit: contain;
+}
+.mapss {
+    margin-top: 40px;
+
+}
+
+.mapss iframe {
+    width: 62%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    margin: 40px auto 0;
+}
+@media (max-width: 768px) {
+  .hero-contenu {
+    flex-direction: column;
+  }
+
+  .cartes {
+    flex-direction: column;
+  }
+
+  /* Fix header overflowing on mobile */
+  .en-tete-contenu {
+    height: auto;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .menu {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Stack footer items on mobile */
+  .pied-haut,
+  .pied-bas {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Stack about and features sections */
+  .apropos-contenu {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .valeurs {
+    flex-direction: column;
+  }
 }
