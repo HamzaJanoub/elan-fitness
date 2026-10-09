@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 
 html {
@@ -572,6 +572,9 @@ button:focus-visible {
     display: block;
     margin: 40px auto 0;
 }
+
+
+
 @media (max-width: 768px) {
   .hero-contenu {
     flex-direction: column;
@@ -614,4 +617,52 @@ button:focus-visible {
   .valeurs {
     flex-direction: column;
   }
+}
+/* Burger Menu */
+#menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+        transform: translateX(-20px);
+}
+
+.burger span {
+      transform: translateX(-20px);
+    width: 28px;
+    height: 3px;
+    background-color: #FF6B2C;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+
+    .en-tete-contenu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .navigation-principale {
+        display: none;
+        width: 100%;
+    }
+
+    #menu-toggle:checked ~ .navigation-principale {
+        display: block;
+    }
+
+    .navigation-principale .menu {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+            transform: translateX(20px);
+    }
 }
